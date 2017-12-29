@@ -1,7 +1,7 @@
 ###This script contains two functions:
-        #makeCacheMatrix, initializes a 'special' matrix
-        #cacheSolve, retrieves the cached inverse (if present)
-        #if not present, it is calculated and cached.
+        #makeCacheMatrix:       initializes a 'special' matrix
+        #cacheSolve:            retrieves the cached inverse (if present). If not present, 
+        #                       it is calculated and cached.
 
 
 #makeCacheMatrix creates a list of four functions:
@@ -50,10 +50,10 @@ cacheSolve <- function(x, ...) {
 }
 
 ##These are examples
-x <- matrix(c(4,2,7,6), ncol = 2, nrow = 2)
-m <- makeCacheMatrix(x)
-cacheSolve(m)
-
-x2 <- matrix(c(1,0,5,2,1,6,3,5,0), ncol = 3, nrow = 3)
-m2 <- makeCacheMatrix(x2)
-cacheSolve(m2)
+# x <- matrix(c(4,2,7,6), ncol = 2, nrow = 2)
+# m <- makeCacheMatrix(x)
+# cacheSolve(m)
+# 
+# x2 <- matrix(c(1,0,5,2,1,6,3,5,0), ncol = 3, nrow = 3)
+# m2 <- makeCacheMatrix(x2)
+# cacheSolve(m2)
